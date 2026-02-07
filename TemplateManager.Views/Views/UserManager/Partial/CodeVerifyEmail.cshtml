@@ -1,0 +1,174 @@
+﻿@using TemplateManager.Common.ObjectModel;
+@model CodeVerifyEmail;
+
+<table role="presentation" style="width: 100%; border-collapse: collapse">
+    <tr>
+        <td align="center" style="padding: 20px">
+            <table role="presentation"
+                   style="
+            width: 600px;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+          ">
+                <tr>
+                    <td align="center"
+                        style="
+                padding: 20px;
+                background-color: rgb(96, 193, 232);
+                color: #ffffff;
+                font-size: 24px;
+                font-weight: bold;
+              ">
+                        EpyPlus Acquisto
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 30px">
+                        <div style="padding: 20px; border-bottom: 1px dashed #cccccc">
+                            <p style="margin: 0 0 10px 0">
+                                Buongiorno @Model.EMail, grazie per il tuo acquisto!
+                            </p>
+                            <p style="margin: 0">Elenco dei moduli acquistati: XXX.XX</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 30px">
+                        <div style="padding: 20px; border-bottom: 1px dashed #cccccc">
+                            <p style="margin: 0">
+                                Con la versione 11.8 di EpyPlus, l'attivazione del modulo
+                                avverrà in modo automatico entro 24 ore e ti sarà inviata una
+                                notifica di conferma all’apertura dell’applicazione.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 30px">
+                        <div style="padding: 20px; border-bottom: 1px dashed #cccccc">
+                            <p style="margin: 0 0 10px 0">
+                                Non hai ancora la versione 11.8 di EpyPlus? Usa i seguenti
+                                dati per attivare il modulo:
+                            </p>
+                            <p style="margin: 0 0 10px 0; font-weight: bold">
+                                CodeVerify: @Model.CodeVerify
+                            </p>
+                            <p style="margin: 0 0 10px 0; font-weight: bold">
+                                Chiave di attivazione: xxxxx
+                            </p>
+                            <p style="margin: 0; font-weight: bold">
+                                Codice di controllo: xxxxxx
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 30px">
+                        <div style="
+                  padding: 20px;
+                  border-bottom: 1px dashed #cccccc;
+                  text-align: center;
+                ">
+                            <p style="margin: 0 0 10px 0">
+                                Puoi trovare le istruzioni per l'attivazione manuale al
+                                seguente link:
+                            </p>
+                            <a rel="noopener" target="_blank" href="http://litmus.com"
+                               style="background-color: rgba(31, 127, 76, 1);
+          border-radius: 5px;
+          color: #ffffff;
+          display: inline-block;
+          font-size: 18px;
+          font-family: Helvetica, Arial, sans-serif;
+          font-weight: bold;
+          line-height: 50px;
+          text-align: center;
+          text-decoration: none;
+          min-width: 300px;
+          padding: 10px 20px;
+          white-space: nowrap;
+          -webkit-text-size-adjust: none;">
+                                Come attivare nuovi moduli e lingue (pdf) &rarr;
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 30px">
+                        <div style="padding: 20px; border-bottom: 1px dashed #cccccc">
+                            <p style="margin: 0">
+                                Per eventuali chiarimenti sulla procedura o per richiedere la
+                                nuova versione rispondi a questa email e un tecnico ti
+                                assisterà al più presto.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 30px">
+                        <div style="padding: 20px">
+                            <p style="margin: 0">
+                                Cordiali saluti.<br />
+                                EPY S.R.L
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"
+                        style="
+                padding: 20px;
+                background-color: #eeeeee;
+                font-size: 12px;
+                color: #777777;
+                text-align: left;
+              ">
+                        The information contained in this e-mail and the attached files is
+                        privileged and confidential and do not constitute a commitment by
+                        our organization except where expressly provided for in a written
+                        agreement. If you are not the intended recipient of this message,
+                        please notify the sender immediately by e-mail, destroy it and
+                        delete it from your system. Keeping, disclosing all or part of, or
+                        distributing this message to third parties, as well as copying it
+                        or using it for any other purpose shall constitute a breach of the
+                        principles stipulated in Regulation (EU) 2016/679. Please note
+                        that this e-mail as well as any reply and/or any other message to
+                        the sender’s account shall be regarded as business correspondence
+                        and therefore can be read by other people belonging to the
+                        sender's organization.
+                        <br />
+                        <div style="text-align: center;">
+                            <img src="/img/LogoSolo_Epy_Plus.png"
+                                 alt="Logo EpyPlus"
+                                 style="width: 15px; vertical-align: middle; margin-right: 5px" />
+                            &copy; 2025 EpyPlus. Tutti i diritti riservati.
+                        </div>
+                        <div style="text-align: center; margin-top: 10px; font-size: 10px; color: #777777;">
+                            <a href="#" style="color: #777777; text-decoration: underline;">Unsubscribe</a> from notifications
+
+
+
+                        </div>
+                        <a href="https://localhost:44314/api/pdf/generate?url=https://localhost:44314/EmailMessage/GetHtmlTemplate?id=2341"
+                           style="
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #1aa06d;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+   ">
+                            Scarica il PDF
+                        </a>
+
+
+                    </td>
+
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>

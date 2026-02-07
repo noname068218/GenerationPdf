@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Viewer</title>
+    <script src="~/lib/pdfjs/build/pdf.js"></script>
+    <style>
+        #pdfCanvas {
+            border: 1px solid black;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Подпись</h2>
+    <canvas id="signatureCanvas" width="500" height="200" style="border: 1px solid black;"></canvas>
+    <button id="clearButton">Очистить</button>
+
+    <script>
+        const signatureCanvas = document.getElementById('signatureCanvas');
+        const signatureCtx = signatureCanvas.getContext('2d');
+        let isDrawing = false;
+
+        signatureCanvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            signatureCtx.beginPath();
+            signatureCtx.moveTo(e.offsetX, e.offsetY);
+        });
+
+        signatureCanvas.addEventListener('mousemove', (e) => {
+            if (isDrawing) {
+                signatureCtx.lineTo(e.offsetX, e.offsetY);
+                signatureCtx.stroke();
+            }
+        });
+
+        signatureCanvas.addEventListener('mouseup', () => {
+            isDrawing = false;
+        });
+
+        document.getElementById('clearButton').addEventListener('click', () => {
+            signatureCtx.clearRect(0, 0, signatureCanvas.width, signatureCanvas.height);
+        });
+
+        // Получаем изображение подписи в Base64 для отправки на сервер
+        function getSignatureImage() {
+            return signatureCanvas.toDataURL('image/png');
+        }
+    </script>
+
+</body>
+
+</html>

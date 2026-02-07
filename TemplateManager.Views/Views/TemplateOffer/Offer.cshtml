@@ -1,0 +1,347 @@
+﻿@model TemplateManager.Common.ObjectModel.OfferContract
+@using System.Globalization
+@functions {
+    string DateStr(DateTime? d) => d.HasValue ? d.Value.ToString("dd'/'MM'/'yyyy", CultureInfo.InvariantCulture) : "";
+}
+
+<style type="text/css">
+    /* ТВОИ КЛАССЫ — без изменений */
+    .awlist1 {
+        list-style: none;
+        counter-reset: awlistcounter44_0
+    }6
+
+        .awlist1 > li:before {
+            content: counter(awlistcounter44_0);
+            counter-increment: awlistcounter44_0
+        }
+
+    .awlist2 {
+        list-style: none;
+        counter-reset: awlistcounter47_1
+    }
+
+        .awlist2 > li:before {
+            content: '1.' counter(awlistcounter47_1);
+            counter-increment: awlistcounter47_1
+        }
+
+    .awlist3 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 1
+    }
+
+        .awlist3 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist4 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 2
+    }
+
+        .awlist4 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist5 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 3
+    }
+
+        .awlist5 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist6 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 4
+    }
+
+        .awlist6 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist7 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 5
+    }
+
+        .awlist7 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist8 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 6
+    }
+
+        .awlist8 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist9 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 7
+    }
+
+        .awlist9 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist10 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 17
+    }
+
+        .awlist10 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist11 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 18
+    }
+
+        .awlist11 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist12 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 19
+    }
+
+        .awlist12 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist13 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 20
+    }
+
+        .awlist13 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist14 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 21
+    }
+
+        .awlist14 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist15 {
+        list-style: none;
+        counter-reset: awlistcounter56_2
+    }
+
+        .awlist15 > li:before {
+            content: '1.22.' counter(awlistcounter56_2);
+            counter-increment: awlistcounter56_2
+        }
+
+    .awlist16 {
+        list-style: none;
+        counter-reset: awlistcounter56_2 1
+    }
+
+        .awlist16 > li:before {
+            content: '1.22.' counter(awlistcounter56_2);
+            counter-increment: awlistcounter56_2
+        }
+
+    .awlist17 {
+        list-style: none;
+        counter-reset: awlistcounter56_2 2
+    }
+
+        .awlist17 > li:before {
+            content: '1.22.' counter(awlistcounter56_2);
+            counter-increment: awlistcounter56_2
+        }
+
+    .awlist18 {
+        list-style: none;
+        counter-reset: awlistcounter27_1 22
+    }
+
+        .awlist18 > li:before {
+            content: '1.' counter(awlistcounter27_1);
+            counter-increment: awlistcounter27_1
+        }
+
+    .awlist19 {
+        list-style: none;
+        counter-reset: awlistcounter27_0 1
+    }
+
+        .awlist19 > li:before {
+            content: counter(awlistcounter27_0);
+            counter-increment: awlistcounter27_0
+        }
+
+    .awlist20 {
+        list-style: none;
+        counter-reset: awlistcounter27_0 2
+    }
+
+        .awlist20 > li:before {
+            content: counter(awlistcounter27_0);
+            counter-increment: awlistcounter27_0
+        }
+
+    .awlist21 {
+        list-style: none;
+        counter-reset: awlistcounter27_0 3
+    }
+
+        .awlist21 > li:before {
+            content: counter(awlistcounter27_0);
+            counter-increment: awlistcounter27_0
+        }
+
+    .awlist22 {
+        list-style: none;
+        counter-reset: awlistcounter38_0
+    }
+
+        .awlist22 > li:before {
+            content: '(' counter(awlistcounter38_0) ')';
+            counter-increment: awlistcounter38_0
+        }
+
+    .awlist23 {
+        list-style: none;
+        counter-reset: awlistcounter27_0 4
+    }
+
+        .awlist23 > li:before {
+            content: counter(awlistcounter27_0);
+            counter-increment: awlistcounter27_0
+        }
+
+    .awlist24 {
+        list-style: none;
+        counter-reset: awlistcounter27_0 5
+    }
+
+        .awlist24 > li:before {
+            content: counter(awlistcounter27_0);
+            counter-increment: awlistcounter27_0
+        }
+
+    .awlist25 {
+        list-style: none;
+        counter-reset: awlistcounter27_0 6
+    }
+
+        .awlist25 > li:before {
+            content: counter(awlistcounter27_0);
+            counter-increment: awlistcounter27_0
+        }
+</style>
+
+<div>
+    <div style="clear:both;">
+        <p style="margin-top:0pt; margin-bottom:0pt; text-align:center;">
+            <img src="https://myfiles.space/user_files/290984_ddfccf75a650ea62/1759420807_ek25125/1759420807_ek25125-1.png" width="637" height="132" alt="Header" style="float:left;">
+        </p>
+    </div>
+
+    <!-- Spett.le + Company -->
+    <p style="margin-top:0pt; margin-bottom:0pt; text-indent:248.1pt; text-align:justify; font-size:10pt;">
+        <span style="font-family:Verdana; color:#000080;">Spett.le</span>
+    </p>
+    <p style="margin-top:0pt; margin-bottom:0pt; text-indent:248.1pt; text-align:justify;">
+        <strong><span style="font-family:Verdana; color:#000080;">@Model.CompanyName</span></strong>
+    </p>
+
+    <!-- c.a. + Contract -->
+    <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;">
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.4pt; display:inline-block;">&nbsp;</span>
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.4pt; display:inline-block;">&nbsp;</span>
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.4pt; display:inline-block;">&nbsp;</span>
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.3pt; display:inline-block;">&nbsp;</span>
+        <span style="font-family:Verdana; color:#000080;">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span style="font-family:Verdana; color:#000080;">c.a.&nbsp;</span>
+        <strong><span style="font-family:Verdana; color:#000080;">@Model.Customer</span></strong>
+    </p>
+
+    <!-- Email -->
+    <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;">
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.4pt; display:inline-block;">&nbsp;</span>
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.4pt; display:inline-block;">&nbsp;</span>
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.4pt; display:inline-block;">&nbsp;</span>
+        <span style="width:28.3pt; display:inline-block;">&nbsp;</span><span style="width:28.3pt; display:inline-block;">&nbsp;</span>
+        &nbsp;&nbsp;<span style="font-family:Verdana; font-size:10pt; color:#000080;">@Model.EmailCustomer</span>
+    </p>
+
+    <!-- Place and Data -->
+    <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt;">
+        <span style="font-family:Verdana; color:#000080;">@DateStr(Model.DateOffer)
+        </span>
+    </p>
+
+    <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify;"><strong><span style="font-family:Verdana; color:#000080;">&nbsp;</span></strong></p>
+
+        <div style="display:flex; gap:6px; align-items:baseline;">
+            <p style="margin:0;"><strong><span style="font-family:Verdana; color:#000080;">Offerta n.</span></strong></p>
+            <p style="margin:0;"><strong><span style="font-family:Verdana; color:#000080;">@Model.CodeOffer</span></strong></p>
+        </div>
+
+
+    <p style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt;">
+        <span style="font-family:Verdana; color:#000080;">&nbsp;</span>
+    </p>
+
+    @if (!string.IsNullOrWhiteSpace(Model.DefinitionOfOffer?.PresentationInfo))
+    {
+        <div style="margin-top:0pt; margin-bottom:0pt; text-align:justify; font-size:10pt; color:#000080; font-family:Verdana;">
+            @Html.Raw(Model.DefinitionOfOffer!.PresentationInfo!)
+        </div>
+    }
+
+    <ol type="1" class="awlist1" style="margin:0pt; padding-left:0pt;">
+        <li style="margin-left:28.5pt; text-indent:-28.5pt; text-align:justify; font-family:Verdana; font-size:11pt; color:#000080;">
+            <span style="width:21.51pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <strong>Descrizione</strong>
+        </li>
+    </ol>
+
+
+    @if (!string.IsNullOrWhiteSpace(Model.DefinitionOfOffer?.Definition))
+    {
+        <div style="margin-top:0pt; margin-left:28.3pt; margin-bottom:0pt; text-align:justify; font-size:10pt; color:#000080; font-family:Verdana;">
+            @Html.Raw(Model.DefinitionOfOffer!.Definition!)
+        </div>
+    }
+    else
+    {
+      
+        <p style="margin-top:0pt; margin-left:28.3pt; margin-bottom:0pt; text-align:justify; font-size:10pt;">
+            <span style="font-family:Verdana; color:#000080;">EPY</span><em><span style="font-family:Verdana; color:#000080;">plus</span></em>
+            <span style="font-family:Verdana; color:#000080;">&nbsp;è un pacchetto di programmi modulari, perfettamente integrati.</span>
+        </p>
+        <p style="margin-top:0pt; margin-left:28.3pt; margin-bottom:0pt; text-align:justify; font-size:10pt;">
+            <span style="font-family:Verdana; color:#000080;">Ogni modulo può essere aggiunto al modulo SDS (base) in qualunque momento, senza bisogno di alcun intervento specialistico.</span>
+        </p>
+    }
+
+
+</div>

@@ -1,0 +1,7 @@
+﻿
+namespace TemplateManager.APIs.BasicAuth
+{
+    
+    
+
+}

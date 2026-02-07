@@ -1,0 +1,95 @@
+# ============================================
+# .NET / Visual Studio
+# ============================================
+bin/
+obj/
+.vs/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.vspscc
+*.vssscc
+*.pidb
+*.scc
+*.VC.db
+*.VC.VC.opendb
+*.csproj.user
+*.vbproj.user
+project.lock.json
+project.fragment.lock.json
+artifacts/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.nupkg
+*.snupkg
+*.nuget.props
+*.nuget.targets
+packages/
+.nuget/
+
+# ============================================
+# AppSettings & Secrets (БЕЗОПАСНОСТЬ)
+# ============================================
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Secrets.json
+appsettings.*.json
+!appsettings.json
+**/appsettings.Development.json
+**/appsettings.Local.json
+**/appsettings.Production.json
+**/appsettings.Secrets.json
+**/appsettings.*.json
+**/secrets.json
+**/*.Local.json
+*.pfx
+.env
+.env.*
+!.env.example
+connectionstrings*.config
+**/connectionstrings*.json
+
+# User-specific / IDE
+*.rsuser
+.idea/
+*.sln.docstates
+.claude/settings.local.json
+
+# ============================================
+# Build & Publish
+# ============================================
+*.dll
+!Library/*.dll
+*.pdb
+*.exe
+*.log
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+*.trx
+*.coverage
+*.coveragexml
+*.DotSettings.user
+
+# ============================================
+# OS & Misc
+# ============================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+*.bak

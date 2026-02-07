@@ -1,0 +1,6 @@
+@TemplateManager.APIsRest_HostAddress = http://localhost:5034
+
+GET {{TemplateManager.APIsRest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

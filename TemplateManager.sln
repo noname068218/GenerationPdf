@@ -1,0 +1,147 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationLayer", "ApplicationLayer", "{06F45C3E-D624-425D-B2C6-B6F2C0813CB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainService", "DomainService", "{3DD74FAA-F107-49C8-AF07-9DC7A51E5B3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIsRest", "APIsRest", "{C99056C6-77EB-4408-918E-FDFDD4DC9EEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateManager.APIs", "DomainService\TemplateManager.APIs\TemplateManager.APIs.csproj", "{1EDF6C5C-4428-4C21-9153-3EE53AA4FE43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{B03F52F0-422F-406E-A1EF-51C04EC35930}"
+	ProjectSection(SolutionItems) = preProject
+		Library\EmailNotification.Common.dll = Library\EmailNotification.Common.dll
+		Library\EmailNotification.UI.dll = Library\EmailNotification.UI.dll
+		Library\EVentLogOnSite.Common.dll = Library\EVentLogOnSite.Common.dll
+		Library\EVentLogOnSite.UI.dll = Library\EVentLogOnSite.UI.dll
+		Library\IncidentManager.Common.dll = Library\IncidentManager.Common.dll
+		Library\IncidentManager.UI.dll = Library\IncidentManager.UI.dll
+		Library\Standard.Common.dll = Library\Standard.Common.dll
+		Library\Standard.ef.dll = Library\Standard.ef.dll
+		Library\TraceActivityAPIsRest.DAL.dll = Library\TraceActivityAPIsRest.DAL.dll
+		Library\TraceActivityAPIsRest.dll = Library\TraceActivityAPIsRest.dll
+		Library\UserAzureActiveDirectory.Plugin.dll = Library\UserAzureActiveDirectory.Plugin.dll
+		Library\UserManager.Common.dll = Library\UserManager.Common.dll
+		Library\UserManager.UI.dll = Library\UserManager.UI.dll
+		Library\UserManagerAPIsRest.Plugin.dll = Library\UserManagerAPIsRest.Plugin.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{BD29C1F1-1A2E-41E5-A5AF-0288DCD8AA15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateManager.TestAPIs", "TemplateManager.TestAPIs\TemplateManager.TestAPIs.csproj", "{F123BAA2-697F-4F34-9C8D-0F366D04F9E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSite", "WebSite", "{1D503B98-9812-47C5-B9F7-BE61A10C442C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateManager.WebUI", "ApplicationLayer\WebSite\TemplateManager.WebUI\TemplateManager.WebUI.csproj", "{E2AD8ACC-CB95-464C-AB4F-5B01FD256507}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateManager.APIsRest", "ApplicationLayer\APIsRest\TemplateManager.APIsRest\TemplateManager.APIsRest.csproj", "{CBD453BC-2EB4-4ED1-AFAD-E566259F728D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateManager.Common", "DomainService\TemplateManager.Common\TemplateManager.Common.csproj", "{2F95EAE8-109C-4918-91CD-D3D1C7A34EDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemplateManager.UI", "DomainService\TemplateManager.UI\TemplateManager.UI.csproj", "{5648DE15-737A-46B4-ADBE-E42807D1EFE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{4AC800C8-1406-4A27-9A66-BF8C191B6791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateManager", "Core\TemplateManager\TemplateManager.csproj", "{5649F8C0-1959-44BE-A50B-EC17149A729D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateManager.DAL", "Core\TemplateManager.DAL\TemplateManager.DAL.csproj", "{216ACD51-496B-47CE-9A2A-DCB5872E82F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EDF6C5C-4428-4C21-9153-3EE53AA4FE43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDF6C5C-4428-4C21-9153-3EE53AA4FE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDF6C5C-4428-4C21-9153-3EE53AA4FE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDF6C5C-4428-4C21-9153-3EE53AA4FE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F123BAA2-697F-4F34-9C8D-0F366D04F9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F123BAA2-697F-4F34-9C8D-0F366D04F9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F123BAA2-697F-4F34-9C8D-0F366D04F9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F123BAA2-697F-4F34-9C8D-0F366D04F9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2AD8ACC-CB95-464C-AB4F-5B01FD256507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2AD8ACC-CB95-464C-AB4F-5B01FD256507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2AD8ACC-CB95-464C-AB4F-5B01FD256507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2AD8ACC-CB95-464C-AB4F-5B01FD256507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD453BC-2EB4-4ED1-AFAD-E566259F728D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD453BC-2EB4-4ED1-AFAD-E566259F728D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD453BC-2EB4-4ED1-AFAD-E566259F728D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD453BC-2EB4-4ED1-AFAD-E566259F728D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F95EAE8-109C-4918-91CD-D3D1C7A34EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F95EAE8-109C-4918-91CD-D3D1C7A34EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F95EAE8-109C-4918-91CD-D3D1C7A34EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F95EAE8-109C-4918-91CD-D3D1C7A34EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5648DE15-737A-46B4-ADBE-E42807D1EFE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5648DE15-737A-46B4-ADBE-E42807D1EFE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5648DE15-737A-46B4-ADBE-E42807D1EFE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5648DE15-737A-46B4-ADBE-E42807D1EFE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5649F8C0-1959-44BE-A50B-EC17149A729D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5649F8C0-1959-44BE-A50B-EC17149A729D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5649F8C0-1959-44BE-A50B-EC17149A729D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5649F8C0-1959-44BE-A50B-EC17149A729D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216ACD51-496B-47CE-9A2A-DCB5872E82F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216ACD51-496B-47CE-9A2A-DCB5872E82F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216ACD51-496B-47CE-9A2A-DCB5872E82F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216ACD51-496B-47CE-9A2A-DCB5872E82F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C99056C6-77EB-4408-918E-FDFDD4DC9EEB} = {06F45C3E-D624-425D-B2C6-B6F2C0813CB7}
+		{1EDF6C5C-4428-4C21-9153-3EE53AA4FE43} = {3DD74FAA-F107-49C8-AF07-9DC7A51E5B3A}
+		{F123BAA2-697F-4F34-9C8D-0F366D04F9E2} = {BD29C1F1-1A2E-41E5-A5AF-0288DCD8AA15}
+		{1D503B98-9812-47C5-B9F7-BE61A10C442C} = {06F45C3E-D624-425D-B2C6-B6F2C0813CB7}
+		{E2AD8ACC-CB95-464C-AB4F-5B01FD256507} = {1D503B98-9812-47C5-B9F7-BE61A10C442C}
+		{CBD453BC-2EB4-4ED1-AFAD-E566259F728D} = {C99056C6-77EB-4408-918E-FDFDD4DC9EEB}
+		{2F95EAE8-109C-4918-91CD-D3D1C7A34EDC} = {3DD74FAA-F107-49C8-AF07-9DC7A51E5B3A}
+		{5648DE15-737A-46B4-ADBE-E42807D1EFE1} = {3DD74FAA-F107-49C8-AF07-9DC7A51E5B3A}
+		{5649F8C0-1959-44BE-A50B-EC17149A729D} = {4AC800C8-1406-4A27-9A66-BF8C191B6791}
+		{216ACD51-496B-47CE-9A2A-DCB5872E82F8} = {4AC800C8-1406-4A27-9A66-BF8C191B6791}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BEC7B2A-05D8-492B-A017-08E321D7AB40}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/epysolutiondev
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DomainService\\TemplateManager.APIs\\TemplateManager.APIs.csproj
+		SccProjectTopLevelParentUniqueName1 = TemplateManager.sln
+		SccProjectName1 = DomainService/TemplateManager.APIs
+		SccLocalPath1 = DomainService\\TemplateManager.APIs
+		SccProjectUniqueName2 = TemplateManager.TestAPIs\\TemplateManager.TestAPIs.csproj
+		SccProjectTopLevelParentUniqueName2 = TemplateManager.sln
+		SccProjectName2 = TemplateManager.TestAPIs
+		SccLocalPath2 = TemplateManager.TestAPIs
+		SccProjectUniqueName3 = ApplicationLayer\\WebSite\\TemplateManager.WebUI\\TemplateManager.WebUI.csproj
+		SccProjectTopLevelParentUniqueName3 = TemplateManager.sln
+		SccProjectName3 = ApplicationLayer/WebSite/TemplateManager.WebUI
+		SccLocalPath3 = ApplicationLayer\\WebSite\\TemplateManager.WebUI
+		SccProjectUniqueName4 = ApplicationLayer\\APIsRest\\TemplateManager.APIsRest\\TemplateManager.APIsRest.csproj
+		SccProjectTopLevelParentUniqueName4 = TemplateManager.sln
+		SccProjectName4 = ApplicationLayer/APIsRest/TemplateManager.APIsRest
+		SccLocalPath4 = ApplicationLayer\\APIsRest\\TemplateManager.APIsRest
+		SccProjectUniqueName5 = DomainService\\TemplateManager.Common\\TemplateManager.Common.csproj
+		SccProjectTopLevelParentUniqueName5 = TemplateManager.sln
+		SccProjectName5 = DomainService/TemplateManager.Common
+		SccLocalPath5 = DomainService\\TemplateManager.Common
+		SccProjectUniqueName6 = DomainService\\TemplateManager.UI\\TemplateManager.UI.csproj
+		SccProjectTopLevelParentUniqueName6 = TemplateManager.sln
+		SccProjectName6 = DomainService/TemplateManager.UI
+		SccLocalPath6 = DomainService\\TemplateManager.UI
+		SccProjectUniqueName7 = Core\\TemplateManager\\TemplateManager.csproj
+		SccProjectTopLevelParentUniqueName7 = TemplateManager.sln
+		SccProjectName7 = Core/TemplateManager
+		SccLocalPath7 = Core\\TemplateManager
+		SccProjectUniqueName8 = Core\\TemplateManager.DAL\\TemplateManager.DAL.csproj
+		SccProjectTopLevelParentUniqueName8 = TemplateManager.sln
+		SccProjectName8 = Core/TemplateManager.DAL
+		SccLocalPath8 = Core\\TemplateManager.DAL
+	EndGlobalSection
+EndGlobal
